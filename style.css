@@ -698,6 +698,7 @@ header
 .logix-desc {
   color: white;
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 /* FEATURES */

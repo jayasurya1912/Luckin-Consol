@@ -259,20 +259,20 @@
             Customs Clearance & Handling Services
           </h2>
 
-          <p data-aos="fade-down">
+          <p data-aos="fade-down" style="text-align: justify;color: black;">
             At Luckin Consol Logistics Pvt Ltd, we provide efficient and hassle-free customs handling 
             and clearance services to ensure your cargo moves smoothly across borders without delays. 
             Our experienced team manages all regulatory requirements, documentation, and compliance 
             processes with precision.
           </p>
 
-          <p data-aos="fade-down">
+          <p data-aos="fade-down" style="text-align: justify;color: black;">
             We understand that customs procedures can be complex and time-sensitive. That’s why we 
             handle everything—from classification and duty calculation to approvals—ensuring fast and 
             efficient clearance.
           </p>
 
-          <p data-aos="fade-down">
+          <p data-aos="fade-down" style="text-align: justify;color: black;">
             With strong coordination with customs authorities and deep industry expertise, we minimize 
             risks, avoid delays, and keep your supply chain moving without interruptions.
           </p>
@@ -328,7 +328,7 @@
     <!-- TOP CONTENT -->
     <div class="text-center lkc-offer-header">
       <h2>What We Offer: Seamless Customs Clearance Solutions</h2>
-      <p>
+      <p style="text-align: justify;hyphens: auto;">
         At Luckin Consol Logistics Pvt Ltd, we provide end-to-end customs clearance services 
         to simplify international trade. Our expert team ensures accurate documentation, 
         regulatory compliance, and smooth coordination to minimize delays.
@@ -431,7 +431,7 @@
     <!-- HEADER -->
     <div class="lkc-why-scroll-header text-center">
       <h2>Why Choose Luckin Consol Logistics?</h2>
-      <p>
+      <p style="text-align: justify;">
         We simplify customs clearance with expertise, precision, and efficiency—ensuring smooth 
         cargo movement without delays or disruptions.
       </p>
@@ -752,6 +752,24 @@ Leading LCL Consolidation Experts!
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  document.querySelectorAll(".lx-mobile-toggle").forEach(toggle => {
+    toggle.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const parent = this.parentElement;
+      const submenu = parent.querySelector(".lx-mobile-submenu");
+
+      parent.classList.toggle("active");
+
+      if (submenu.style.maxHeight) {
+        submenu.style.maxHeight = null;
+      } else {
+        submenu.style.maxHeight = submenu.scrollHeight + "px";
+      }
+    });
+  });
 </script>
 </body>
 </html>

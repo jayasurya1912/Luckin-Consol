@@ -14,6 +14,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="all.css">
+   
 </head>
 <body>
 
@@ -714,6 +715,24 @@ Leading LCL Consolidation Experts!
         alert("Failed to send message. Please try again.");
         console.error(error);
       });
+  });
+</script>
+<script>
+  document.querySelectorAll(".lx-mobile-toggle").forEach(toggle => {
+    toggle.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const parent = this.parentElement;
+      const submenu = parent.querySelector(".lx-mobile-submenu");
+
+      parent.classList.toggle("active");
+
+      if (submenu.style.maxHeight) {
+        submenu.style.maxHeight = null;
+      } else {
+        submenu.style.maxHeight = submenu.scrollHeight + "px";
+      }
+    });
   });
 </script>
 </body>

@@ -1290,6 +1290,7 @@ header
   color: black;
   line-height: 1.7;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 /* BUTTON */
@@ -1571,9 +1572,10 @@ header
 }
 
 .lx-digital-content p {
-  color: #555;
+  color: black;
   line-height: 1.7;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 /* IMAGE */
@@ -1650,9 +1652,10 @@ header
 }
 
 .lx-dg-content p {
-  color: #555;
+  color: black;
   line-height: 1.7;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 /* BOLD FIRST PARA */

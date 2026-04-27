@@ -474,5 +474,24 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 
+    <script>
+  document.querySelectorAll(".lx-mobile-toggle").forEach(toggle => {
+    toggle.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const parent = this.parentElement;
+      const submenu = parent.querySelector(".lx-mobile-submenu");
+
+      parent.classList.toggle("active");
+
+      if (submenu.style.maxHeight) {
+        submenu.style.maxHeight = null;
+      } else {
+        submenu.style.maxHeight = submenu.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+
 </body>
 </html>

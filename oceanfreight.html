@@ -253,19 +253,19 @@
       <div class="col-lg-6 mb-4 mb-lg-0">
         <h2 class="fw-bold mb-3" data-aos="fade-down">Luckin Consol Logistics Pvt Ltd</h2>
 
-        <p class="text-muted" style="line-height: 1.8;" data-aos="fade-down"> 
+        <p class="text-black" style="line-height: 1.8;text-align: justify;" data-aos="fade-down"  > 
           At Luckin Consol Logistics Pvt Ltd, our Ocean Freight services provide reliable and cost-effective 
           solutions for transporting cargo across global trade routes. Whether it’s full container loads (FCL) 
           or less-than-container loads (LCL), we ensure smooth and efficient shipping tailored to your business needs.
         </p>
 
-        <p class="text-muted" style="line-height: 1.8;" data-aos="fade-down">
+        <p class="text-black" style="line-height: 1.8;text-align: justify;" data-aos="fade-down">
           With a strong network of global carriers and partners, we offer flexible scheduling, competitive pricing, 
           and optimized transit times. Our team manages everything—from booking and documentation to customs clearance 
           and final delivery—ensuring a seamless experience.
         </p>
 
-        <p class="text-muted" style="line-height: 1.8;" data-aos="fade-down">
+        <p class="text-black" style="line-height: 1.8;text-align: justify;" data-aos="fade-down">
           We prioritize cargo safety and transparency, providing real-time updates and complete visibility 
           throughout the journey. No matter the size or complexity, our solutions deliver reliability, 
           efficiency, and peace of mind.
@@ -731,6 +731,24 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  document.querySelectorAll(".lx-mobile-toggle").forEach(toggle => {
+    toggle.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const parent = this.parentElement;
+      const submenu = parent.querySelector(".lx-mobile-submenu");
+
+      parent.classList.toggle("active");
+
+      if (submenu.style.maxHeight) {
+        submenu.style.maxHeight = null;
+      } else {
+        submenu.style.maxHeight = submenu.scrollHeight + "px";
+      }
+    });
+  });
 </script>
 </body>
 </html>
