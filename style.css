@@ -471,6 +471,66 @@ header
         font-size: 26px;
       }
     }
+    /* GRID WRAPPER */
+.lx-about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 15px;
+}
+
+/* BIG IMAGE */
+.lx-about-big img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  min-height: 420px;
+}
+
+/* RIGHT SIDE */
+.lx-about-small {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.lx-about-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* HOVER EFFECT */
+.lx-about-grid img {
+  transition: 0.4s ease;
+}
+
+.lx-about-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .lx-about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lx-about-small {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  .lx-about-big img {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .lx-about-small {
+    grid-template-columns: 1fr;
+  }
+}
 
    .poppins-marquee {
   overflow: hidden;
@@ -2774,6 +2834,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .shape {
  fill: #0E1822;
 }
+
 /* From Uiverse.io by vikramsinghnegi */ 
 a.youtube-button {
   font-family: inherit;
