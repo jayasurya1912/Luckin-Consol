@@ -80,6 +80,7 @@ header
   border-radius: 50%;
   margin-right: 8px;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .lx-social a:hover {
@@ -1069,15 +1070,16 @@ header
     justify-content: center;
   }
 }
+/* SECTION */
 .lkc-faq-section {
-  padding: 50px 0;
+  padding: 80px 0;
   background: url('images/dot-background.png');
   font-family: 'Poppins', sans-serif;
 }
 
 /* TITLE */
 .lkc-faq-title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -1085,7 +1087,7 @@ header
   color: #777;
 }
 
-/* ITEM */
+/* FAQ ITEM */
 .lkc-faq-item {
   border: none;
   margin-bottom: 15px;
@@ -1096,13 +1098,14 @@ header
 /* BUTTON */
 .lkc-faq-btn {
   background: #0c1e35;
+  color: #fff;
   font-weight: 600;
-  padding: 10px;
-  position: relative;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
 }
 
+/* REMOVE DEFAULT ICON */
 .lkc-faq-btn::after {
   display: none !important;
 }
@@ -1110,21 +1113,23 @@ header
 /* PLUS ICON */
 .lkc-icon {
   margin-left: auto;
-  font-size: 15px;
-  font-weight: bold;
-  transition: 0.3s;
-  background-color: #E52125;
-  padding: 15px;
-
-}
-
-/* ACTIVE STATE */
-.accordion-button:not(.collapsed) .lkc-icon::before {
-  content: "-";
+  background: #E52125;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .lkc-icon::before {
   content: "+";
+  font-size: 18px;
+}
+
+.accordion-button:not(.collapsed) .lkc-icon::before {
+  content: "-";
 }
 
 /* BODY */
@@ -1134,18 +1139,34 @@ header
   padding: 15px 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .lkc-faq-title {
-    font-size: 28px;
-  }
-}
-.lx-contact-info {
-  padding: 80px 0;
-  background: #f8f9fb;
-  font-family: 'Poppins', sans-serif;
+/* IMAGE */
+.lkc-faq-image {
+  border: 8px solid #E52125;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
+.lkc-faq-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.lkc-faq-image img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .lkc-faq-image {
+    margin-top: 30px;
+  }
+
+  .lkc-faq-title {
+    font-size: 26px;
+  }
+}
 /* CARD */
 .lx-contact-card {
   background: #e9edf2;
