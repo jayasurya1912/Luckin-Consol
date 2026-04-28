@@ -3458,69 +3458,49 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 }
 .lkc-why-scroll-section {
-  padding: 80px 0 40px;
-  background: white;
+  padding: 80px 0;
+  background: #ffffff;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
 }
 
 /* HEADER */
 .lkc-why-scroll-header {
   max-width: 700px;
-  margin: 0 auto 40px;
+  margin: 0 auto 50px;
 }
 
 .lkc-why-scroll-header h2 {
   font-size: 40px;
   font-weight: 700;
-  color: black;
+  color: #000;
 }
 
 .lkc-why-scroll-header p {
-  color: black;
+  color: #555;
   margin-top: 15px;
-}
-
-/* SCROLL WRAPPER */
-.lkc-why-scroll-wrapper {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 20px 40px;
-  scroll-snap-type: x mandatory;
-}
-
-/* HIDE SCROLLBAR */
-.lkc-why-scroll-wrapper::-webkit-scrollbar {
-  display: none;
 }
 
 /* CARD */
 .lkc-why-scroll-card {
-  min-width: 280px;
-  max-width: 280px;
-  flex: 0 0 auto;
-  background: rgba(255,255,255,0.08);
+  background-color: #0c1e35;
   border-radius: 15px;
   padding: 25px;
-  scroll-snap-align: start;
+  height: 100%;
   transition: 0.3s;
-  backdrop-filter: blur(6px);
-  background-color: #0c1e35;
 }
 
 /* NUMBER */
 .lkc-why-scroll-card span {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
-  color: white;
+  color: #fff;
   display: block;
   margin-bottom: 10px;
-  font-size: 35px;
 }
 
 /* TEXT */
 .lkc-why-scroll-card h5 {
+  color: #fff;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -3532,23 +3512,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /* HOVER */
 .lkc-why-scroll-card:hover {
-  background: #ff6b00;
+  background: #E52125;
   transform: translateY(-8px);
-}
-
-.lkc-why-scroll-card:hover span,
-.lkc-why-scroll-card:hover p {
-  color: #fff;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .lkc-why-scroll-header h2 {
     font-size: 26px;
-  }
-
-  .lkc-why-scroll-wrapper {
-    padding: 20px;
   }
 }
 .hero-section {
