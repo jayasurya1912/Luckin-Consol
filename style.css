@@ -2777,7 +2777,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* From Uiverse.io by vikramsinghnegi */ 
 a.youtube-button {
   font-family: inherit;
-  font-size: 18px;
+  font-size: 16px;
   background: linear-gradient(to bottom, #ff0000 0%, #ff5050 100%);
   color: white;
   padding: 0.8em 1.2em;
