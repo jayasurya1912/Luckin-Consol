@@ -471,7 +471,7 @@ header
         font-size: 26px;
       }
     }
-    /* GRID WRAPPER */
+/* GRID WRAPPER */
 .lx-about-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -531,7 +531,6 @@ header
     grid-template-columns: 1fr;
   }
 }
-
    .poppins-marquee {
   overflow: hidden;
   background: white;
