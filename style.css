@@ -2193,7 +2193,7 @@ header
   }
 }
 .lx-counter-section {
-  padding: 30px 0;
+  padding: 20px 0;
   background: url('https://www.transparenttextures.com/patterns/cubes.png');
   background-color: #E52125;
 }
@@ -2205,8 +2205,8 @@ header
 
 /* ICON */
 .lx-icon {
-  width: 85px;
-  height: 85px;
+  width: 75px;
+  height: 75px;
   background: #0b1c39;
   border-radius: 50%;
   display: flex;
@@ -2218,12 +2218,12 @@ header
 
 .lx-icon i {
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /* COUNT */
 .lx-counter-box h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: white;
   margin-bottom: 10px;

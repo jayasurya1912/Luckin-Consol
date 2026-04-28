@@ -4248,3 +4248,80 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .lx-submit-btn:hover {
   background: #0c2b33;
 }
+/* SECTION */
+.lx-contact-modern2 {
+  padding: 80px 0;
+  background: #f8f9fb;
+}
+
+/* CARD */
+.lx2-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 18px;
+  background: #fff;
+  position: relative;
+  transition: 0.4s ease;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* GRADIENT BORDER EFFECT */
+.lx2-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(45deg, #e52125, #0c2b33);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* ICON */
+.lx2-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background: linear-gradient(135deg, #e52125, #ff4d4d);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: 0.4s;
+}
+
+/* TEXT */
+.lx2-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.lx2-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* HOVER */
+.lx2-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(229,33,37,0.15);
+}
+
+.lx2-card:hover .lx2-icon {
+  background: linear-gradient(135deg, #0c2b33, #1b3a5c);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .lx2-card {
+    padding: 25px 15px;
+  }
+}
