@@ -5,7 +5,7 @@ html, body {
 body
 {
     font-family: poppins;
-    margin: 0;
+    gin: 0;
    color: black;
 }
 header
@@ -1487,7 +1487,7 @@ header
 
 /* Text */
 .marquee-group span {
-  font-size: 72px;
+  font-size: 52px;
   font-weight: 800;
   color: #0c1e35;
   white-space: nowrap;

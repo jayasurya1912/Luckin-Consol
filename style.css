@@ -1824,6 +1824,69 @@ header
   font-weight: 600;
   font-size: 14px;
 }
+/* GROUP */
+.lxu-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+/* ICON */
+.lxu-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #777;
+  z-index: 2;
+}
+
+/* INPUT + SELECT + TEXTAREA */
+.lxu-input {
+  width: 100%;
+  height: 52px;
+  padding: 0 15px 0 48px !important; /* FIXED */
+  border-radius: 12px;
+  border: none !important;
+  outline: none;
+  font-size: 14px;
+  background: #e9e9e9 !important;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* TEXTAREA */
+.lxu-textarea .lxu-input {
+  height: 120px;
+  padding-top: 14px !important;
+}
+
+/* TEXTAREA ICON */
+.lxu-textarea .lxu-icon {
+  top: 18px;
+  transform: none;
+}
+
+/* REMOVE BOOTSTRAP EFFECT */
+.lkc-input {
+  padding-left: 48px !important;
+}
+
+/* SELECT FIX */
+select.lxu-input {
+  appearance: none;
+}
+
+/* FOCUS */
+.lxu-input:focus {
+  background: #fff !important;
+  box-shadow: 0 0 0 2px rgba(229,33,37,0.2);
+}
+
+/* ICON COLOR CHANGE */
+.lxu-group:focus-within .lxu-icon {
+  color: #E52125;
+}
 
 .logix-form-card h2 {
   font-weight: 700;
@@ -1843,7 +1906,89 @@ header
 .logix-form-card input::placeholder {
   color: black;
 }
+/* GROUP */
+.lxu-group {
+  position: relative;
+  margin-bottom: 18px;
+}
 
+/* INPUT + SELECT + TEXTAREA SAME STYLE */
+.lxu-input {
+  width: 100%;
+  height: 52px;
+  padding: 0 15px 0 50px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: #e9e9e9;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+/* TEXTAREA FIX */
+.lxu-textarea .lxu-input {
+  height: 120px;
+  padding-top: 14px;
+}
+
+/* ICON PERFECT CENTER */
+.lxu-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+}
+
+/* TEXTAREA ICON POSITION */
+.lxu-textarea .lxu-icon {
+  top: 18px;
+  transform: none;
+}
+
+/* PLACEHOLDER */
+.lxu-input::placeholder {
+  color: #666;
+}
+
+/* FOCUS */
+.lxu-input:focus {
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(229,33,37,0.2);
+}
+
+/* ICON COLOR ON FOCUS */
+.lxu-group:focus-within .lxu-icon {
+  color: #E52125;
+}
+
+/* SELECT FIX */
+select.lxu-input {
+  appearance: none;
+}
+
+/* MOBILE FIX */
+@media (max-width: 576px) {
+
+  .lxu-input {
+    height: 48px;
+    font-size: 13px;
+    padding-left: 45px;
+  }
+
+  .lxu-icon {
+    left: 15px;
+    font-size: 14px;
+  }
+
+  .lxu-textarea .lxu-input {
+    height: 110px;
+  }
+}
 /* RANGE */
 .form-range {
   accent-color: #ff4d1c;
@@ -2342,7 +2487,7 @@ header
   }
 }
 .lx-cta-section {
-  padding: 70px 0;
+  padding: 50px 0;
   background: url('images/homeone.jpg') no-repeat center/cover;
   position: relative;
   overflow: hidden;
@@ -2364,7 +2509,76 @@ header
 }
 
 /* PATTERN OVERLAY */
+/* GROUP */
+.lxu-group {
+  position: relative;
+  margin-bottom: 15px;
+}
 
+/* ICON */
+.lxu-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* INPUT */
+.lxu-input {
+  width: 100%;
+  padding: 13px 15px 13px 42px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+}
+
+/* TEXTAREA FIX */
+.lxu-textarea .lxu-icon {
+  top: 18px;
+  transform: none;
+}
+
+/* FOCUS EFFECT */
+.lxu-input:focus {
+  box-shadow: 0 0 0 2px rgba(229,33,37,0.2);
+}
+
+/* ICON COLOR ON FOCUS */
+.lxu-group:focus-within .lxu-icon {
+  color: #E52125;
+}
+
+/* SELECT FIX */
+select.lxu-input {
+  appearance: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+
+  .lxu-input {
+    padding: 11px 12px 11px 38px;
+    font-size: 13px;
+  }
+
+  .logix-btn {
+    width: 100%;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .reviews {
+    width: 100%;
+  }
+}
 
 /* TITLE */
 .lx-cta-title {

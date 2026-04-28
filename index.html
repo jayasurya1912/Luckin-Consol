@@ -300,69 +300,58 @@ forward.
 
 
     
-  <section class="lxs-service-section">
+    <section class="logix-service-section" >
   <div class="container">
     <div class="row g-4">
 
-      <!-- CARD -->
-      <div class="col-lg-3 col-md-6">
-        <div class="lxs-card">
-          <div class="lxs-icon">
-            <i class="fas fa-plane"></i>
-          </div>
+      <!-- CARD 1 -->
+     <div class="col-lg-3 col-md-6" data-aos="flip-left">
+  <div class="logix-service-card">
+    <div class="logix-icon-wrap">
+      <i class="fas fa-plane"></i>
+    </div>
+    <h4>Export Logistics</h4>
+    <p>Efficient export solutions with seamless documentation, customs clearance, and reliable global shipping for LCL consolidation.</p>
+  </div>
+</div>
 
-          <h4>Export Logistics</h4>
-          <p>Efficient export solutions with seamless documentation and global shipping support.</p>
+<!-- CARD 2 -->
+<div class="col-lg-3 col-md-6" data-aos="flip-left">
+  <div class="logix-service-card">
+    <div class="logix-icon-wrap">
+      <i class="fas fa-shield-alt"></i>
+    </div>
+    <h4>Safety And Reliability</h4>
+    <p>We ensure secure cargo handling with strict safety standards, real-time tracking, and dependable delivery across all logistics operations.</p>
+  </div>
+</div>
 
-          <div class="lxs-wave"></div>
-        </div>
-      </div>
+<!-- CARD 3 -->
+<div class="col-lg-3 col-md-6" data-aos="flip-left">
+  <div class="logix-service-card">
+    <div class="logix-icon-wrap">
+      <i class="fas fa-truck-fast"></i>
+    </div>
+    <h4>Fast Delivery</h4>
+    <p>Optimized transit times with efficient routing and strong carrier networks to guarantee faster and timely delivery worldwide.</p>
+  </div>
+</div>
 
-      <!-- CARD -->
-      <div class="col-lg-3 col-md-6">
-        <div class="lxs-card">
-          <div class="lxs-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-
-          <h4>Safety & Reliability</h4>
-          <p>Strict safety standards and reliable delivery across all logistics operations.</p>
-
-          <div class="lxs-wave"></div>
-        </div>
-      </div>
-
-      <!-- CARD -->
-      <div class="col-lg-3 col-md-6">
-        <div class="lxs-card">
-          <div class="lxs-icon">
-            <i class="fas fa-truck-fast"></i>
-          </div>
-
-          <h4>Fast Delivery</h4>
-          <p>Optimized routes and strong network ensure faster deliveries worldwide.</p>
-
-          <div class="lxs-wave"></div>
-        </div>
-      </div>
-
-      <!-- CARD -->
-      <div class="col-lg-3 col-md-6">
-        <div class="lxs-card">
-          <div class="lxs-icon">
-            <i class="fas fa-headset"></i>
-          </div>
-
-          <h4>24/7 Support</h4>
-          <p>Our support team is always ready to assist with your logistics needs.</p>
-
-          <div class="lxs-wave"></div>
-        </div>
-      </div>
+<!-- CARD 4 -->
+<div class="col-lg-3 col-md-6" data-aos="flip-left">
+  <div class="logix-service-card">
+    <div class="logix-icon-wrap">
+      <i class="fas fa-headset"></i>
+    </div>
+    <h4>24/7 Support</h4>
+    <p>Dedicated customer support available round the clock to assist with shipments, updates, and logistics queries anytime.</p>
+  </div>
+</div>
 
     </div>
   </div>
 </section>
+
 
     
 
@@ -1196,26 +1185,47 @@ Leading LCL Consolidation Experts!
             <p class="tag">GET FREE QUOTE</p>
             <h2>Request a Quote</h2>
 
-            <form id="contactForm">
+           <form id="contactForm">
 
-  <input type="text" id="name" class="lkc-input" placeholder="Your Name" required>
-  <input type="email" id="email" class="lkc-input" placeholder="Email Address" required>
-  <input type="text" id="phone" class="lkc-input" placeholder="Phone Number" required>
+  <!-- NAME -->
+  <div class="lxu-group">
+    <i class="lxu-icon fas fa-user"></i>
+    <input type="text" id="name" class="lkc-input lxu-input" placeholder="Your Name" required>
+  </div>
+
+  <!-- EMAIL -->
+  <div class="lxu-group">
+    <i class="lxu-icon fas fa-envelope"></i>
+    <input type="email" id="email" class="lkc-input lxu-input" placeholder="Email Address" required>
+  </div>
+
+  <!-- PHONE -->
+  <div class="lxu-group">
+    <i class="lxu-icon fas fa-phone"></i>
+    <input type="text" id="phone" class="lkc-input lxu-input" placeholder="Phone Number" required>
+  </div>
 
   <!-- SERVICE -->
-  <select id="service" class="lkc-input" required>
-    <option selected disabled>Select Service</option>
-    <option>LCL Consolidation</option>
-    <option>DG Handling</option>
-    <option>Air Freight</option>
-    <option>Ocean Freight</option>
-    <option>Project Cargo</option>
-    <option>Customs Handling</option>
-  </select>
+  <div class="lxu-group">
+    <i class="lxu-icon fas fa-cogs"></i>
+    <select id="service" class="lkc-input lxu-input" required>
+      <option selected disabled>Select Service</option>
+      <option>LCL Consolidation</option>
+      <option>DG Handling</option>
+      <option>Air Freight</option>
+      <option>Ocean Freight</option>
+      <option>Project Cargo</option>
+      <option>Customs Handling</option>
+    </select>
+  </div>
 
   <!-- MESSAGE -->
-  <textarea id="message" class="lkc-input" rows="4" placeholder="Enter your message"></textarea>
+  <div class="lxu-group lxu-textarea">
+    <i class="lxu-icon fas fa-comment"></i>
+    <textarea id="message" class="lkc-input lxu-input" rows="4" placeholder="Enter your message"></textarea>
+  </div>
 
+  <!-- BUTTON + REVIEWS -->
   <div class="d-flex justify-content-between align-items-center mt-4 flex-wrap gap-3">
     
     <button type="submit" class="logix-btn">
