@@ -328,7 +328,7 @@ header
   .logistics-section {
   padding: 80px 0;
   position: relative;
-  background: url('images/maplocation.png') no-repeat center/cover;
+  
   z-index: 1;
 }
 
@@ -510,7 +510,7 @@ header
 
 /* Text */
 .marquee-group span {
-  font-size: 72px;
+  font-size: 52px;
   font-weight: 800;
   color: #0c1e35;
   white-space: nowrap;
@@ -1369,15 +1369,15 @@ header
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .lx-footer {
-    text-align: center;
+    text-align: start;
   }
 
   .lx-contact p {
-    justify-content: center;
+    justify-content: start;
   }
 
   .lx-social {
-    justify-content: center;
+    justify-content: start;
   }
 }
     .logix-serve-number {
@@ -2342,7 +2342,7 @@ header
   }
 }
 .lx-cta-section {
-  padding: 80px 0;
+  padding: 70px 0;
   background: url('images/homeone.jpg') no-repeat center/cover;
   position: relative;
   overflow: hidden;
@@ -2369,7 +2369,7 @@ header
 /* TITLE */
 .lx-cta-title {
   color: #fff;
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 800;
   line-height: 1.2;
   position: relative;
@@ -3249,5 +3249,100 @@ textarea.lkc-input {
 @media(max-width:768px){
   .lx-title {
     font-size: 26px;
+  }
+}
+/* SECTION */
+.lxs-service-section {
+  padding: 80px 0;
+  background: #f4f6f9;
+}
+
+/* CARD */
+.lxs-card {
+  position: relative;
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 20px 20px 60px 20px; /* cut corner style */
+  text-align: left;
+  overflow: hidden;
+  transition: 0.4s ease;
+  height: 100%;
+  box-shadow: 2px 4px 2px #666;
+}
+
+/* FLOAT ICON */
+.lxs-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #e52125;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+/* TEXT */
+.lxs-card h4 {
+  margin-top: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.lxs-card p {
+  font-size: 14px;
+  color: black;
+  transition: 0.3s;
+}
+
+/* WAVE BACKGROUND */
+.lxs-wave {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(135deg, #e52125, #ff4d4d);
+  border-radius: 50% 50% 0 0;
+  transition: 0.5s ease;
+  z-index: 0;
+}
+
+/* HOVER EFFECT */
+.lxs-card:hover .lxs-wave {
+  bottom: 0;
+}
+
+/* TEXT COLOR CHANGE */
+.lxs-card:hover h4,
+.lxs-card:hover p {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* ICON ANIMATION */
+.lxs-card:hover .lxs-icon {
+  background: #fff;
+  color: #e52125;
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* LIFT EFFECT */
+.lxs-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .lxs-card {
+    padding: 25px 15px;
   }
 }

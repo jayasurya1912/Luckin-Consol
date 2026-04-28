@@ -118,15 +118,15 @@ header
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .lx-footer {
-    text-align: center;
+    text-align: start;
   }
 
   .lx-contact p {
-    justify-content: center;
+    justify-content: start;
   }
 
   .lx-social {
-    justify-content: center;
+    justify-content: start;
   }
 }
 .topbar {
@@ -700,7 +700,7 @@ header
  .logistics-section {
   padding: 80px 0;
   position: relative;
-  background: url('images/maplocation.png') no-repeat center/cover;
+
   z-index: 1;
 }
 
@@ -759,7 +759,7 @@ header
 
     .description {
       color: black;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 25px;
       text-align: justify;
     }
@@ -945,7 +945,7 @@ header
   }
 }
 .lx-cta-section {
-  padding: 80px 0;
+  padding: 70px 0;
   background: url('images/homeone.jpg') no-repeat center/cover;
   position: relative;
   overflow: hidden;
@@ -970,7 +970,7 @@ header
 /* TITLE */
 .lx-cta-title {
   color: #fff;
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 800;
   line-height: 1.2;
   position: relative;
@@ -1070,14 +1070,14 @@ header
   }
 }
 .lkc-faq-section {
-  padding: 80px 0;
+  padding: 50px 0;
   background: url('images/dot-background.png');
   font-family: 'Poppins', sans-serif;
 }
 
 /* TITLE */
 .lkc-faq-title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -1097,7 +1097,7 @@ header
 .lkc-faq-btn {
   background: #0c1e35;
   font-weight: 600;
-  padding: 15px;
+  padding: 10px;
   position: relative;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   color: white;
@@ -1110,7 +1110,7 @@ header
 /* PLUS ICON */
 .lkc-icon {
   margin-left: auto;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   transition: 0.3s;
   background-color: #E52125;
@@ -4249,79 +4249,93 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background: #0c2b33;
 }
 /* SECTION */
-.lx-contact-modern2 {
+.lx-contact-anim {
   padding: 80px 0;
   background: #f8f9fb;
 }
 
 /* CARD */
-.lx2-card {
-  text-align: center;
+.lxa-card {
+  position: relative;
+  background: #0c1e35;
   padding: 30px 20px;
   border-radius: 18px;
-  background: #fff;
-  position: relative;
+  text-align: center;
+  overflow: hidden;
   transition: 0.4s ease;
   height: 100%;
   z-index: 1;
-  overflow: hidden;
+  color: white;
 }
 
-/* GRADIENT BORDER EFFECT */
-.lx2-card::before {
+/* ANIMATED BACKGROUND */
+.lxa-card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  padding: 1px;
-  background: linear-gradient(45deg, #e52125, #0c2b33);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(135deg, #e52125, #ff4d4d);
   z-index: -1;
+  transition: 0.5s ease;
 }
 
 /* ICON */
-.lx2-icon {
-  width: 70px;
-  height: 70px;
+.lxa-icon {
+  width: 65px;
+  height: 65px;
   margin: 0 auto 15px;
-  background: linear-gradient(135deg, #e52125, #ff4d4d);
+  background: #e52125;
   color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 /* TEXT */
-.lx2-card h5 {
+.lxa-card h5 {
   font-weight: 600;
   margin-bottom: 10px;
+  transition: 0.3s;
 }
 
-.lx2-card p {
+.lxa-card p {
   font-size: 14px;
-  color: #666;
+  color: white;
+  transition: 0.3s;
 }
 
-/* HOVER */
-.lx2-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(229,33,37,0.15);
+/* HOVER ANIMATION */
+.lxa-card:hover::before {
+  height: 100%;
 }
 
-.lx2-card:hover .lx2-icon {
-  background: linear-gradient(135deg, #0c2b33, #1b3a5c);
+/* TEXT COLOR CHANGE */
+.lxa-card:hover h5,
+.lxa-card:hover p {
+  color: #fff;
+}
+
+/* ICON ANIMATION */
+.lxa-card:hover .lxa-icon {
+  background: #fff;
+  color: #e52125;
+  transform: translateY(-5px) scale(1.1) rotate(5deg);
+}
+
+/* CARD LIFT */
+.lxa-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(229,33,37,0.2);
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-  .lx2-card {
+  .lxa-card {
     padding: 25px 15px;
   }
 }
