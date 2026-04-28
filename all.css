@@ -2154,67 +2154,109 @@ header
   transform: scale(1.05);
 }
 .airfreight-section {
-  background: linear-gradient(to right, #f8fafc 50%, #eef3ff 50%);
+  background: #f5f7fb;
 }
 
-.air-content h2 {
-  font-family: 'Montserrat', sans-serif;
+/* IMAGE STACK */
+.air-stack {
+  position: relative;
 }
 
-/* Feature Points */
-.air-feature {
-  background: #0c1e35;
-  padding: 10px 14px;
-  border-radius: 10px;
+.img-big img {
+  border-radius: 20px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* SMALL IMAGE */
+.img-small {
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  width: 50%;
+}
+
+.img-small img {
+  border-radius: 15px;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CONTENT BOX */
+.air-box {
+  background: linear-gradient(135deg, #0c1e35, #162d50);
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* TAG */
+.air-tag {
+  background: #E52125;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.air-box h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.air-box p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* FEATURES */
+.air-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.air-features span {
+  background: rgba(255,255,255,0.1);
+  padding: 8px 12px;
+  border-radius: 20px;
   font-size: 14px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  color: white;
 }
 
-/* Button */
+/* BUTTON */
 .air-btn {
+  display: inline-block;
   background: #E52125;
   color: #fff;
   padding: 10px 25px;
   border-radius: 30px;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 .air-btn:hover {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
-/* Image Style */
-.air-img-wrapper {
-  position: relative;
-}
-
-.air-img-wrapper img {
-  border-radius: 20px;
-  transition: 0.4s;
-}
-
-.air-img-wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  right: -15px;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 3px solid #0d6efd;
-  z-index: -1;
-}
-
-.air-img-wrapper:hover img {
-  transform: scale(1.05);
-}
-
-/* Mobile Fix */
+/* MOBILE */
 @media (max-width: 991px) {
-  .airfreight-section {
-    background: #f8fafc;
+  .img-big img {
+    height: auto;
+  }
+
+  .img-small {
+    position: static;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .air-box {
+    margin-top: 20px;
   }
 }
 .air-offer-sec {
